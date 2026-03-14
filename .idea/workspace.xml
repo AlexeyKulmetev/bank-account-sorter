@@ -4,15 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9250e642-94cb-4b8f-a944-1eece4e6708e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9250e642-94cb-4b8f-a944-1eece4e6708e" name="Changes" comment="&quot;Доработан класс BankAccount&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/ConsoleInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/DataInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/RandomInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByBalanceStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByHolderStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByNumberStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/validation/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank-account-sorter/src/main/java/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/cli/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank-account-sorter/src/main/java/data/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/data/BankAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -22,6 +42,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mar1k1221"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlexeyKulmetev/bank-account-sorter.git",
+    "accountId": "810f84d1-0afd-4570-8241-0c309cbd2db4"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -32,14 +64,42 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "feature/morozov",
     "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="bank-account-sorter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cli.Main" />
+      <module name="bank-account-sorter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="bank-account-sorter" />
       <method v="2">
@@ -51,13 +111,12 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-      </set>
-    </attachedChunks>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +126,15 @@
       <option name="presentableId" value="Default" />
       <updated>1773328910530</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Доработан класс BankAccount&quot;">
+      <option name="closed" value="true" />
+      <created>1773500683936</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773500683936</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Доработан класс BankAccount&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Доработан класс BankAccount&quot;" />
   </component>
 </project>
