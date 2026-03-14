@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9250e642-94cb-4b8f-a944-1eece4e6708e" name="Changes" comment="&quot;Доработан класс BankAccount&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/ConsoleInputStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/DataInputStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/input/RandomInputStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByBalanceStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByHolderStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortByNumberStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/strategy/sort/SortingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/validation/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9250e642-94cb-4b8f-a944-1eece4e6708e" name="Changes" comment="- Implemented BankAccount with Builder pattern&#10;- Added Strategy pattern for data input (Random and Console)&#10;- Added Strategy pattern for sorting (by number, holder, balance)&#10;- Integrated centralized validation logic&#10;- Created interactive console menu with a main loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-sorter/src/main/java/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/cli/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-sorter/src/main/java/data/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-sorter/src/main/java/data/BankAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +36,7 @@
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/AlexeyKulmetev/bank-account-sorter.git",
+    "url": "https://github.com/Mar1k1221/bank-account-sorter.git",
     "accountId": "810f84d1-0afd-4570-8241-0c309cbd2db4"
   }
 }]]></component>
@@ -134,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773500683936</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Implemented BankAccount with Builder pattern&#10;- Added Strategy pattern for data input (Random and Console)&#10;- Added Strategy pattern for sorting (by number, holder, balance)&#10;- Integrated centralized validation logic&#10;- Created interactive console menu with a main loop">
+      <option name="closed" value="true" />
+      <created>1773506695923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773506695923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Доработан класс BankAccount&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Доработан класс BankAccount&quot;" />
+    <MESSAGE value="implement strategy pattern for input/sort and add data validation" />
+    <MESSAGE value="- Implemented BankAccount with Builder pattern&#10;- Added Strategy pattern for data input (Random and Console)&#10;- Added Strategy pattern for sorting (by number, holder, balance)&#10;- Integrated centralized validation logic&#10;- Created interactive console menu with a main loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Implemented BankAccount with Builder pattern&#10;- Added Strategy pattern for data input (Random and Console)&#10;- Added Strategy pattern for sorting (by number, holder, balance)&#10;- Integrated centralized validation logic&#10;- Created interactive console menu with a main loop" />
   </component>
 </project>
