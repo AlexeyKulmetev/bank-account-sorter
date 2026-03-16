@@ -37,3 +37,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Настройки IDEA
+.idea/workspace.xml
+.idea/vcs.xml
