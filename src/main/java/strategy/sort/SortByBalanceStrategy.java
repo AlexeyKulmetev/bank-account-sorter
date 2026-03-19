@@ -4,7 +4,6 @@ import collection.CustomArrayList;
 import data.BankAccount;
 
 import java.util.Comparator;
-import java.util.List;
 
 public class SortByBalanceStrategy implements SortingStrategy {
     @Override

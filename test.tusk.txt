@@ -1,0 +1,4 @@
+ACC-001, Marat Morozov, 700.0
+ACC-002, Murat Kairovkh, 700.0
+ACC-003, Alexei Kulmetiev, 333.0
+ACC-10, Asya Aidaralieva , 150.0
