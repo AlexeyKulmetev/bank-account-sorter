@@ -25,6 +25,7 @@ public class Main {
             System.out.println("1. Ввод данных (Случайный или Ручной)");
             System.out.println("2. Показать текущие данные");
             System.out.println("3. Сортировать данные");
+            System.out.println("4. Сохранить текущие данные в файл");
             System.out.println("0. Выход");
             System.out.print("Выберите действие: ");
 
@@ -100,6 +101,15 @@ public class Main {
                         } else {
                             System.out.println("Неверный выбор сортировки.");
                         }
+                    }
+                    break;
+                case 4:
+                    if (accounts == null || accounts.isEmpty()) {
+                        System.out.println("Нечего сохранять! Сначала создайте данные.");
+                    } else {
+                        System.out.print("Введите имя файла для сохранения (например, output.txt): ");
+                        String filename = scanner.next();
+                        InputOutput.FileExportService.saveToFile(accounts, filename);
                     }
                     break;
 
