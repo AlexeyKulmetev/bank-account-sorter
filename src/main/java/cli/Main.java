@@ -1,5 +1,6 @@
 package cli;
 
+import collection.CustomArrayList;
 import data.BankAccount;
 import strategy.input.ConsoleInputStrategy;
 import strategy.input.DataInputStrategy;
@@ -16,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<BankAccount> accounts = null;
+        CustomArrayList<BankAccount> accounts = null;
         boolean isRunning = true;
 
         while (isRunning) {

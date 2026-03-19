@@ -1,5 +1,6 @@
 package strategy.input;
 
+import collection.CustomArrayList;
 import data.BankAccount;
 
 import java.util.ArrayList;
@@ -10,8 +11,8 @@ public class RandomInputStrategy implements DataInputStrategy {
     private final Random random = new Random();
 
     @Override
-    public List<BankAccount> fill(int length) {
-        List<BankAccount> accounts = new ArrayList<>();
+    public CustomArrayList<BankAccount> fill(int length) {
+        CustomArrayList<BankAccount> accounts = new CustomArrayList<>();
         for (int i = 0; i < length; i++) {
 
             String number = "ACC-" + (1000 + random.nextInt(9000));

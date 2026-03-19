@@ -1,9 +1,10 @@
 package strategy.input;
 
+import collection.CustomArrayList;
 import data.BankAccount;
 
-import java.util.List;
+
 
 public interface DataInputStrategy {
-    List<BankAccount> fill(int length);
+    CustomArrayList<BankAccount> fill(int length);
 }

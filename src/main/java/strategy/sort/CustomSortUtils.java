@@ -1,10 +1,12 @@
 package strategy.sort;
 
+import collection.CustomArrayList;
+
 import java.util.Comparator;
 import java.util.List;
 
 public class CustomSortUtils {
-    public static <T> void bubbleSort(List<T> list, Comparator<T> comparator) {
+    public static <T> void bubbleSort(CustomArrayList<T> list, Comparator<T> comparator) {
         if (list == null || list.size() <= 1) {
             return;
         }

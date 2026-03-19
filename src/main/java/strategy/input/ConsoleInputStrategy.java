@@ -1,5 +1,6 @@
 package strategy.input;
 
+import collection.CustomArrayList;
 import data.BankAccount;
 import validation.Validator;
 import java.util.ArrayList;
@@ -10,8 +11,8 @@ public class ConsoleInputStrategy implements DataInputStrategy {
     private final Scanner scanner = new Scanner(System.in);
 
     @Override
-    public List<BankAccount> fill(int length) {
-        List<BankAccount> accounts = new ArrayList<>();
+    public CustomArrayList<BankAccount> fill(int length) {
+        CustomArrayList<BankAccount> accounts = new CustomArrayList<>();
 
         for (int i = 0; i < length; i++) {
             System.out.println("\nВвод данных для счета №" + (i + 1));

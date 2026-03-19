@@ -1,8 +1,9 @@
 package strategy.sort;
 
+import collection.CustomArrayList;
 import data.BankAccount;
-import java.util.List;
+
 
 public interface SortingStrategy {
-    void sort(List<BankAccount> accounts);
+    void sort(CustomArrayList<BankAccount> accounts);
 }
