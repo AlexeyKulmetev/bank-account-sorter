@@ -1,0 +1,9 @@
+--- Сохраненная коллекция ---
+BankAccount{number='ACC-2460', holder='Client_1', balance=2339.632045240601}
+BankAccount{number='ACC-9208', holder='Client_2', balance=4856.453595584172}
+BankAccount{number='ACC-7204', holder='Client_3', balance=2968.0720959122987}
+
+--- Сохраненная коллекция ---
+BankAccount{number='ACC-2745', holder='Client_2', balance=1515.7919993139385}
+BankAccount{number='ACC-3631', holder='Client_1', balance=4616.486890296059}
+
