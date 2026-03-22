@@ -1,5 +1,7 @@
 package data;
 
+import java.util.Objects;
+
 public class BankAccount {
     private final String accountNumber;
     private final String accountHolder;
@@ -22,6 +24,17 @@ public class BankAccount {
 
     public double getBalance() {
         return balance;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof BankAccount that)) return false;
+        return Double.compare(balance, that.balance) == 0 && Objects.equals(accountNumber, that.accountNumber) && Objects.equals(accountHolder, that.accountHolder);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountNumber, accountHolder, balance);
     }
 
     @Override
