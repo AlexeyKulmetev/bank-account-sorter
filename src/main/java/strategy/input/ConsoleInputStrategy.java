@@ -33,14 +33,14 @@ public class ConsoleInputStrategy implements DataInputStrategy {
             String holder = scanner.nextLine();
 
             System.out.print("Введите начальный баланс: ");
-            double balance = getValidDoubleInput();
+            String balanceString = scanner.nextLine();
 
             try {
 
                 return new BankAccount.Builder()
                         .setAccountNumber(number)
                         .setAccountHolder(holder)
-                        .setBalance(balance)
+                        .setBalance(Double.parseDouble(balanceString.trim()))
                         .build();
             } catch (IllegalArgumentException e) {
 
@@ -50,16 +50,4 @@ public class ConsoleInputStrategy implements DataInputStrategy {
         }
     }
 
-    private double getValidDoubleInput() {
-        while (true) {
-            String input = scanner.nextLine().trim();
-
-            try {
-                return Double.parseDouble(input);
-            } catch (NumberFormatException e) {
-                System.out.println("Ошибка: введенная строка '" + input + "' не является корректным числом.");
-                System.out.print("Пожалуйста, введите баланс еще раз: ");
-            }
-        }
-    }
 }
