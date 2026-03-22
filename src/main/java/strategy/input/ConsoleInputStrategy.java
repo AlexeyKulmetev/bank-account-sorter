@@ -50,9 +50,8 @@ public class ConsoleInputStrategy implements DataInputStrategy {
         }
     }
 
-    public static double getValidDoubleInput() {
+    private double getValidDoubleInput() {
         while (true) {
-            Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine().trim();
 
             try {
