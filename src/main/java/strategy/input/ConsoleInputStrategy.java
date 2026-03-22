@@ -27,10 +27,10 @@ public class ConsoleInputStrategy implements DataInputStrategy {
             System.out.println("\nВвод данных для счета №" + accountIndex);
 
             System.out.print("Введите номер счета (мин. 5 симв.): ");
-            String number = scanner.next();
+            String number = scanner.nextLine();
 
             System.out.print("Введите имя владельца: ");
-            String holder = scanner.next();
+            String holder = scanner.nextLine();
 
             System.out.print("Введите начальный баланс: ");
             double balance = getValidDoubleInput();
