@@ -35,14 +35,23 @@
 ## Структура проекта
 src/
 ├── cli/ # Точка входа (Main)
+
 ├── collection/ # Кастомная коллекция CustomArrayList
+
 ├── data/ # Модель BankAccount и Builder
+
 ├── inputoutput/ # Сервис экспорта в файл
+
 ├── strategy/
+
 │ ├── input/ # Стратегии ввода (Console, Random, File)
+
 │ ├── sort/ # Стратегии сортировки и утилиты сортировки
+
 │ └── MultithreadedSearchService.java # Многопоточный поиск
+
 ├── validation/ # Валидаторы (Validator)
+
 └── tests/ # Ручные тесты (CustomArrayListTest, BankAccountBuilderTest и др.)
 
 text
