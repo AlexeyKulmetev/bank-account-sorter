@@ -8,9 +8,23 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
+/**
+ * Стратегия чтения банковских счетов из файла.
+ * Поддерживает формат: номер,владелец,баланс (CSV).
+ * Некорректные строки пропускаются с выводом предупреждения.
+ *
+ * @author Марат Морозов
+ */
 public class FileInputStrategy implements DataInputStrategy {
     private final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Заполняет коллекцию счетами из указанного пользователем файла.
+     * Читает не более length строк, пропускает некорректные записи.
+     *
+     * @param length максимальное количество счетов для чтения
+     * @return коллекция счетов, успешно прочитанных из файла
+     */
     @Override
     public CustomArrayList<BankAccount> fill(int length) {
         CustomArrayList<BankAccount> accounts = new CustomArrayList<>();
@@ -35,7 +49,13 @@ public class FileInputStrategy implements DataInputStrategy {
         return accounts;
     }
 
-
+    /**
+     * Преобразует строку из файла в объект BankAccount.
+     * Ожидает формат: номер,владелец,баланс
+     *
+     * @param line строка для парсинга
+     * @return объект BankAccount или null при ошибке
+     */
     private BankAccount parseLineToAccount(String line) {
 
         String[] parts = line.split(",");

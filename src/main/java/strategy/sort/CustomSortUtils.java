@@ -5,8 +5,21 @@ import data.BankAccount;
 
 import java.util.Comparator;
 
+/**
+ * Утилитарный класс с алгоритмами сортировки для кастомной коллекции.
+ * Содержит реализацию пузырьковой сортировки и специальной сортировки четных балансов.
+ *
+ * @author Хажмурат Каиров
+ */
 public class CustomSortUtils {
 
+    /**
+     * Реализует пузырьковую сортировку для кастомной коллекции.
+     *
+     * @param <T> тип элементов коллекции
+     * @param list коллекция для сортировки
+     * @param comparator компаратор для сравнения элементов
+     */
     public static <T> void bubbleSort(CustomArrayList<T> list, Comparator<T> comparator) {
         if (list == null || list.size() <= 1) {
             return;
@@ -31,6 +44,12 @@ public class CustomSortUtils {
         }
     }
 
+    /**
+     * Сортирует только четные балансы, оставляя нечетные на своих местах.
+     * Специальная сортировка для демонстрации нестандартного подхода.
+     *
+     * @param list коллекция банковских счетов для сортировки
+     */
     public static void sortEvenBalances(CustomArrayList<BankAccount> list) {
         int n = list.size();
 

@@ -1,5 +1,6 @@
 package cli;
 
+import searchservice.MultithreadedSearchService;
 import collection.CustomArrayList;
 import data.BankAccount;
 import strategy.input.ConsoleInputStrategy;
@@ -12,8 +13,21 @@ import strategy.sort.SortingStrategy;
 
 import java.util.Scanner;
 
+/**
+ * Главный класс приложения "Сортировка банковских счетов".
+ * Реализует консольный интерфейс для работы с коллекцией счетов.
+ * Поддерживает ввод данных, сортировку, сохранение в файл и многопоточный поиск.
+ *
+ * @author Алексей Кульметьев
+ */
 public class Main {
 
+    /**
+     * Точка входа в приложение.
+     * Запускает циклическое меню для взаимодействия с пользователем.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CustomArrayList<BankAccount> accounts = null;
@@ -28,7 +42,6 @@ public class Main {
             System.out.println("5. Многопоточный поиск по балансу");
             System.out.println("0. Выход");
             System.out.print("Выберите действие: ");
-
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Ошибка: Введите число!");
@@ -113,7 +126,7 @@ public class Main {
                     } else {
                         System.out.print("Введите имя файла для сохранения (например, output.txt): ");
                         String filename = scanner.next();
-                        InputOutput.FileExportService.saveToFile(accounts, filename);
+                        output.FileExportService.saveToFile(accounts, filename);
                     }
                     break;
                 case 5:
@@ -123,7 +136,7 @@ public class Main {
                         System.out.print("Введите значение баланса для поиска: ");
                         if (scanner.hasNextDouble()) {
                             double target = scanner.nextDouble();
-                            int result = strategy.MultithreadedSearchService.countByBalance(accounts, target);
+                            int result = MultithreadedSearchService.countByBalance(accounts, target);
                             System.out.println("Результат многопоточного поиска: найдено " + result + " вхождений.");
                         } else {
                             System.out.println("Ошибка: введите числовое значение.");

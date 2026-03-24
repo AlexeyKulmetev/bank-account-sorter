@@ -71,7 +71,9 @@ class ConsoleInputStrategyTest {
         String correctHolderName = "Vasya Pupkine";
         Double correctBalance = 18303.78;
 
-        String input = correctAccountNumber + "\n" + incorrectHolderName + "\n" + correctBalance + "\n" + correctAccountNumber + "\n" + correctHolderName + "\n" + correctBalance + "\n";
+        String input = correctAccountNumber + "\n" + incorrectHolderName + "\n"
+                + correctBalance + "\n" + correctAccountNumber + "\n"
+                + correctHolderName + "\n" + correctBalance + "\n";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         DataInputStrategy strategy = new ConsoleInputStrategy();
@@ -97,7 +99,9 @@ class ConsoleInputStrategyTest {
         Double correctBalance = 18303.78;
         String garbageBalance = "ijfdjlsfjs";
 
-        String input = correctAccountNumber + "\n" + correctHolderName + "\n" + garbageBalance + "\n" + correctAccountNumber + "\n" + correctHolderName + "\n" + correctBalance + "\n";
+        String input = correctAccountNumber + "\n" + correctHolderName + "\n"
+                + garbageBalance + "\n" + correctAccountNumber + "\n"
+                + correctHolderName + "\n" + correctBalance + "\n";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         DataInputStrategy strategy = new ConsoleInputStrategy();

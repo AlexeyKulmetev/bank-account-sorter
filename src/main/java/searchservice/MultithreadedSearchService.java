@@ -1,13 +1,26 @@
-package strategy;
+package searchservice;
 
 import collection.CustomArrayList;
 import data.BankAccount;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Сервис многопоточного поиска банковских счетов по балансу.
+ * Разбивает коллекцию на две части и выполняет поиск параллельно в двух потоках.
+ *
+ * @author Марат Морозов
+ */
 public class MultithreadedSearchService {
 
-
+    /**
+     * Подсчитывает количество счетов с заданным балансом (с учетом погрешности 0.001).
+     * Выполняет поиск в двух параллельных потоках.
+     *
+     * @param accounts коллекция банковских счетов для поиска
+     * @param targetBalance целевое значение баланса
+     * @return количество счетов с балансом, равным целевому (с учетом погрешности)
+     */
     public static int countByBalance(CustomArrayList<BankAccount> accounts, double targetBalance) {
         if (accounts == null || accounts.isEmpty()) return 0;
 
