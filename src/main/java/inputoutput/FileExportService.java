@@ -1,4 +1,4 @@
-package output;
+package inputoutput;
 
 import collection.CustomArrayList;
 import data.BankAccount;

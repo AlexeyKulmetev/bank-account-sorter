@@ -126,7 +126,7 @@ public class Main {
                     } else {
                         System.out.print("Введите имя файла для сохранения (например, output.txt): ");
                         String filename = scanner.next();
-                        output.FileExportService.saveToFile(accounts, filename);
+                        inputoutput.FileExportService.saveToFile(accounts, filename);
                     }
                     break;
                 case 5:
