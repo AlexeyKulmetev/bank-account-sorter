@@ -6,9 +6,24 @@ import data.BankAccount;
 import java.util.Random;
 import java.util.stream.IntStream;
 
+/**
+ * Стратегия случайной генерации банковских счетов.
+ * Создает заданное количество счетов со случайными данными.
+ *
+ * @author Марат Морозов
+ */
 public class RandomInputStrategy implements DataInputStrategy {
     private final Random random = new Random();
 
+    /**
+     * Заполняет коллекцию случайно сгенерированными банковскими счетами.
+     * Номера счетов: ACC-1000 до ACC-9999
+     * Имена владельцев: Client_1, Client_2, ...
+     * Балансы: от 100 до 5100
+     *
+     * @param length количество счетов для генерации
+     * @return коллекция случайно сгенерированных счетов
+     */
     @Override
     public CustomArrayList<BankAccount> fill(int length) {
         CustomArrayList<BankAccount> accounts = new CustomArrayList<>();

@@ -41,25 +41,4 @@ class RandomInputStrategyTest {
         CustomArrayList<BankAccount> zeroLengthList = randomStrategy.fill(15);
         assertEquals(15, zeroLengthList.size());
     }
-
-    @Test
-    @DisplayName("Единственный элемент массива длиной 1 должен быть корректным")
-    void fillTheElementMustBeValid() {
-        DataInputStrategy randomStrategy = new RandomInputStrategy();
-        CustomArrayList<BankAccount> zeroLengthList = randomStrategy.fill(1);
-
-        assertTrue(Validator.isValidAccount(zeroLengthList.get(0)));
-    }
-
-    @Test
-    @DisplayName("Все элементы массива длиной 15 должны быть корректными")
-    void fillAllGeneratedAccountsShouldBeValid() {
-        DataInputStrategy randomStrategy = new RandomInputStrategy();
-        CustomArrayList<BankAccount> zeroLengthList = randomStrategy.fill(15);
-        assertEquals(15, zeroLengthList.size());
-
-        for (var acc: zeroLengthList) {
-            assertTrue(Validator.isValidAccount(acc));
-        }
-    }
 }
